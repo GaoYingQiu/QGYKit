@@ -189,6 +189,10 @@
 {
  //   https://www.cnblogs.com/myqianlan/p/4195994.html  git工作流；
     
+  //git branch 查看本地分支 ，  git branch -a 查看服务器分支；  git checkout 分支名； //切换到具体分支； git branch test2  //创建分支test2
+    //分支合并到主干 ；先回到主干 git checkout master (当前分支有修改，还未commit的时候，会切换失败，应当先commit，但可以不用push)， 再合并分支； git merge 分支名;     分支需命名： git branch -m v0.0.1 test1  修改分支名；
+    //删除 分支；  git push origin --delete 0.0.1 (删除远程分支)    git branch dev -d （删除本地分支）  git branch dev -D （强制删除本地分支）
+    
     
 }
 
