@@ -138,6 +138,51 @@
      */
 }
 
+-(void)cocopoadPrivateLib
+{
+ 
+    /*****************CocoaPod创建自己的私有库**********************/
+    
+    /*
+     1、github 上创建自己的一个私有仓库， QGYKit；  git clone 仓库地址  到本地；
+     2、创建.podspec 文件；  pod spec create QGYKit ; 之后 编辑 .podspec文件 信息；
+     3、把项目文件等 放入， git add .；  git commit -m "提交信息"；  git push 到远程；
+     4、分支 与 tag ; v0.0.1 版本，提交代码到远程； git branch -a 查看远程分支， git branch 查看本地分支； git push origin --delete 0.0.1 (删除远程分支)  ；  要掌握 分支 与 主干的切换；等git 操作；  git tag 查看tag ;  git tag -d v0.0.1 删除远程tag ;
+     5、git push origin v0.0.1 （推送到远程仓库）
+     6、pod repo remove QGYKit , 删除本地pod仓库 ； pod repo push QGYKit QGYKit.podspec 更新仓库；pod repo add QGYKit https://github.com/GaoYingQiu/QGYKit.git 添加仓库
+     
+     
+     7、1）pod spec lint ZYRunTimeCoT.podspec --verbose； 验证.podspec 文件；
+        2）pod lib lint --allow-warnings 验证pod 私有库是否通过验证； 验证通过则可以使用；
+
+     
+     扩展：
+     // --use-libraries --allow-warnings
+     pod trunk push ZYRunTimeCoT.podspec  发布到cocoapod 审核开源；
+     
+     错误提示：
+     使用 Git 报错 error: src refspec master matches more than one.  有一个与当前分支重名的标签tag;需进行删除tag;
+     
+     注释：
+     s.name：名称，pod search 搜索的关键词,注意这里一定要和.podspec的名称一样,否则报错
+     s.version：版本号
+     s.ios.deployment_target:支持的pod最低版本
+     s.summary: 简介
+     s.homepage:项目主页地址
+     s.social_media_url:社交网址,这里我写的微博默认是百度,如果你写的是你自己的博客的话,你的podspec发布成功后会@你
+     s.license:许可证
+     s.author:作者
+     s.source:项目的地址
+     s.requires_arc: 是否支持ARC
+     s.source_files:需要包含的源文件
+     s.public_header_files:公开的头文件
+     s.resources: 资源文件
+     s.dependency：依赖库，不能依赖未发布的库，可以写多个依赖库 字符串逗号隔开；
+     
+     */
+    
+    
+}
 
 
 /*
