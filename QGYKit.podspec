@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QGYKit"
-  s.version      = "1"
+  s.version      = "0.1"
   s.summary      = "OC 项目常用自定义实用视图 of QGYKit."
 
   # This description is used to generate tags and improve search results.
