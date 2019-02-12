@@ -9,9 +9,7 @@
 
 #import "GYDateSimpleSheetView.h"
 
-#import <Masonry.h>
 #import "NSDate+Category.h"
-#import "UIColor+Extension.h"
 
 #define GYSCREEN_W   [UIScreen mainScreen].bounds.size.width
 #define GYSCREEN_H  [UIScreen mainScreen].bounds.size.height

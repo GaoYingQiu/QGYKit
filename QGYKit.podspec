@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QGYKit"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "OC 项目常用自定义实用视图 of QGYKit."
 
   # This description is used to generate tags and improve search results.
@@ -63,10 +63,10 @@ Pod::Spec.new do |s|
   #
 
   s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+  # s.ios.deployment_target = "7.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -89,9 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "QGYKit/GYKit.h"
-  s.exclude_files = "QGYKit/Exclude"
-
+  s.source_files  = "QGYKit","QGYKit/**/*"
+  # s.exclude_files = "QGYKit/Exclude"
   s.public_header_files = "QGYKit/GYKit.h"
 
 
@@ -129,6 +128,7 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
   s.requires_arc = true
+  s.source_files = 'QGYKit/GYKit.h'
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "Masonry"

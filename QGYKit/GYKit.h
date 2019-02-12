@@ -10,6 +10,7 @@
 #define GYKit_h
 
 #import <Foundation/Foundation.h>
+#import <Masonry.h>
 #import "GYDateSimpleSheetView.h"
 
 #endif /* GYKit_h */
