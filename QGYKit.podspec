@@ -89,10 +89,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-s.source_files  =  "QGYKit", "QGYKit/**/*.{h,m}"
-  # s.exclude_files = "Classes/Exclude"
+  s.source_files  =  "QGYKit", "QGYKit/*.{h,m}"
+  s.exclude_files = "QGYKit/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "QGYKit/GYKit.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -115,7 +115,7 @@ s.source_files  =  "QGYKit", "QGYKit/**/*.{h,m}"
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -128,9 +128,9 @@ s.source_files  =  "QGYKit", "QGYKit/**/*.{h,m}"
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "Masonry", "~> 1.1.0"
+  s.dependency "Masonry"
 
 end

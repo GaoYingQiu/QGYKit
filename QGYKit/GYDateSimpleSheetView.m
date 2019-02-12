@@ -8,15 +8,6 @@
 //
 
 #import "GYDateSimpleSheetView.h"
-#import "NSDate+Category.h"
-#import <Masonry.h>
-#import "UIColor+Extension.h"
-
-#define GYSCREEN_W   [UIScreen mainScreen].bounds.size.width
-#define GYSCREEN_H  [UIScreen mainScreen].bounds.size.height
-
-#define GYFontWidthScale   ((CGFloat)((GYSCREEN_W < GYSCREEN_H ? GYSCREEN_W :GYSCREEN_H) / 375.0))  // 375
-#define GYFontRegularText(fsize)  [UIFont fontWithName:@"PingFangSC-Regular" size:(fsize * GYFontWidthScale)]
 
 @interface GYDateSimpleSheetView ()<UIPickerViewDataSource,UIPickerViewDelegate>
 
