@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QGYKit"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "OC 项目常用自定义实用视图 of QGYKit."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,6 @@ Pod::Spec.new do |s|
 
   s.source_files  = "QGYKit","QGYKit/**/*"
   # s.exclude_files = "QGYKit/Exclude"
-  s.public_header_files = "QGYKit/GYKit.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -128,8 +127,8 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
   s.requires_arc = true
+  s.public_header_files = "QGYKit/GYKit.h"
   s.source_files = 'QGYKit/GYKit.h'
-
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "Masonry"
 
