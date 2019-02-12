@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  =  "QGYKit", "QGYKit/*.{h,m}"
+  s.source_files  = "QGYKit/GYKit.h"
   s.exclude_files = "QGYKit/Exclude"
 
   s.public_header_files = "QGYKit/GYKit.h"
